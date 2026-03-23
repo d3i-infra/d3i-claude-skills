@@ -1,0 +1,19 @@
+# Workspace-specific files (contain IPs, credentials references)
+workspaces/
+
+# Secrets
+*.secret
+.env
+.env.*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+*.swp
+*.swo
+*~
+
+# Skill development workspace artifacts
+**/write-adr-workspace/
