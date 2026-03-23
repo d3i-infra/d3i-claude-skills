@@ -1,0 +1,17 @@
+{
+  "name": "d3i-claude-skills",
+  "description": "Skills for the D3I data donation infrastructure team — SRC workspace operations, researcher fork workflows, Eyra mono architecture, and ADR authoring",
+  "owner": {
+    "name": "D3I Infrastructure",
+    "email": "D.M.McCool@uu.nl"
+  },
+  "plugins": [
+    {
+      "name": "d3i-claude-skills",
+      "description": "Skills for D3I infrastructure: SRC workspace ops, researcher forks, Eyra mono architecture, ADR authoring",
+      "source": "./plugins/d3i-claude-skills",
+      "category": "development",
+      "homepage": "https://github.com/d3i-infra/d3i-claude-skills"
+    }
+  ]
+}
