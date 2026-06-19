@@ -8,10 +8,22 @@
   "plugins": [
     {
       "name": "d3i-claude-skills",
-      "description": "Skills for D3I infrastructure: SRC workspace ops, researcher forks, Eyra mono architecture, ADR authoring",
+      "description": "Skills for D3I infrastructure: SRC workspace ops, researcher forks, Eyra mono architecture",
       "source": "./plugins/d3i-claude-skills",
       "category": "development",
       "homepage": "https://github.com/d3i-infra/d3i-claude-skills"
+    },
+    {
+      "name": "write-adr",
+      "description": "Create and manage Architectural Decision Records in MADR format with adg. Ships with the adg CLI so its guidance tracks the tool in lockstep.",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/daniellemccool/ad-guidance-tool.git",
+        "path": "tools/adr-plugin",
+        "ref": "main"
+      },
+      "category": "development",
+      "homepage": "https://github.com/daniellemccool/ad-guidance-tool"
     }
   ]
 }
