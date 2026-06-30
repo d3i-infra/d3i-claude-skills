@@ -12,10 +12,21 @@ Claude Code plugin for the D3I data donation infrastructure team.
 | `researcher-fork` | Working in a D3I researcher fork of data-donation-task | Migrated, needs path generalization |
 | `eyra-mono` | Eyra Next (mono) platform architecture reference | Migrated, needs path generalization |
 
-The `write-adr` plugin (Architectural Decision Records with MADR/adg) now ships with
-the `adg` CLI itself, at [`daniellemccool/ad-guidance-tool`](https://github.com/daniellemccool/ad-guidance-tool)
+The `write-adr` plugin — ADR authoring and governance: durable **MADR** records,
+compact **lean** records (with `applies_to` routing), and obeying injected ADR briefs
+while editing code — ships with the `adg` CLI itself, at
+[`daniellemccool/ad-guidance-tool`](https://github.com/daniellemccool/ad-guidance-tool)
 under `tools/adr-plugin`, so its guidance tracks the tool in lockstep. This marketplace
-references it cross-repo — installing the marketplace makes `write-adr` available too.
+references it cross-repo.
+
+`adg` ships two ways. The plugin bundles a `bin/adg` wrapper that Claude Code puts on the
+Bash tool's PATH, so the **authoring** skills fetch the matching CLI automatically — no
+separate install. The **governance** path, however — the PreToolUse brief hook, the git
+pre-commit hook, and CI (`adg lean index --root .`) — runs *outside* the plugin's PATH and
+needs a **system `adg`**. Install it with the one-liner in the
+[adg README](https://github.com/daniellemccool/ad-guidance-tool#install)
+(`curl … | sh`). For the governance workflow (hook + CI), treat the system install as the
+baseline; the ride-along is a convenience for the authoring skills.
 
 ## Installation
 

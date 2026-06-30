@@ -1,6 +1,6 @@
 {
   "name": "d3i-claude-skills",
-  "description": "Skills for the D3I data donation infrastructure team — SRC workspace operations, researcher fork workflows, Eyra mono architecture, and ADR authoring",
+  "description": "Skills for the D3I data donation infrastructure team — SRC workspace operations, researcher fork workflows, Eyra mono architecture, and ADR authoring + governance",
   "owner": {
     "name": "D3I Infrastructure",
     "email": "D.M.McCool@uu.nl"
@@ -15,7 +15,7 @@
     },
     {
       "name": "write-adr",
-      "description": "Create and manage Architectural Decision Records in MADR format with adg. Ships with the adg CLI so its guidance tracks the tool in lockstep.",
+      "description": "ADR authoring + governance with the adg CLI — three skills: durable MADR records, compact lean records (with applies_to routing), and obeying injected ADR briefs while editing code. Ships with the adg CLI so its guidance tracks the tool in lockstep.",
       "source": {
         "source": "git-subdir",
         "url": "https://github.com/daniellemccool/ad-guidance-tool.git",
