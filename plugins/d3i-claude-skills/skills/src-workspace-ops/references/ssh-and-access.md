@@ -10,7 +10,7 @@ ssh <username>@<workspace-ip>
 
 Example:
 ```bash
-ssh dmccool@145.38.204.74
+ssh j.smith@192.0.2.10
 ```
 
 - **Username**: Your SRC profile username. Find it under "My profile" in the upper right corner of the SRC portal.

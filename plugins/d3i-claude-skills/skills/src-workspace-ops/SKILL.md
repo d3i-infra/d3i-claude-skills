@@ -36,7 +36,7 @@ Before you can help, you need to establish context. Ask for:
 If the user has never SSHed into an SRC workspace before:
 
 1. **Find the workspace IP address**: Go to https://portal.live.surfresearchcloud.nl/, find the workspace, and look for the IP address in the workspace details.
-2. **Find their SRC username**: In the SRC portal, click their name in the upper right corner → "My profile". Their username is shown there (e.g., `dmccool`).
+2. **Find their SRC username**: In the SRC portal, click their name in the upper right corner → "My profile". Their username is shown there (e.g., `j.smith`).
 3. **Open a terminal**:
    - macOS: Open the Terminal app (in Applications → Utilities)
    - Windows: Open PowerShell or install Windows Terminal from the Microsoft Store
