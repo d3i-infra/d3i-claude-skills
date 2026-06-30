@@ -1,7 +1,7 @@
 {
   "name": "d3i-claude-skills",
   "version": "0.2.0",
-  "description": "Skills for the D3I data donation infrastructure team — SRC workspace operations, researcher fork workflows, and Eyra mono architecture",
+  "description": "Skills for the D3I data donation infrastructure team — SRC workspace operations and Eyra mono architecture",
   "author": {
     "name": "D3I Infrastructure",
     "email": "D.M.McCool@uu.nl"

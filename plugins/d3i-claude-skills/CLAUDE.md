@@ -26,11 +26,11 @@ skills/
 - Branch from `main`, use `feat/`, `fix/`, `chore/` prefixes
 - Keep SKILL.md descriptions focused on triggering conditions (when to use), not workflow summaries
 - Test locally with `claude --plugin-dir .` before submitting a PR
-- The `researcher-fork` and `eyra-mono` skills contain hardcoded paths from the original author's machine — these should be generalized over time
+- Skills target D3I coworkers, not one machine: use placeholders (`<username>`, `<workspace-ip>`, `<study>`) and GitHub URLs rather than personal paths, hostnames, or usernames
 
 ## Known Limitations
 
-- `researcher-fork` and `eyra-mono` were migrated from personal commands. Hardcoded paths have been replaced with relative references and GitHub URLs, but some assumptions about directory layout remain (e.g., `d3i/forks/<researcher>/<repo>`).
+- `eyra-mono` references specific mono source files by path and line number; these drift as upstream changes, so verify against the current checkout before relying on a citation.
 - `src-workspace-ops` is comprehensive but has not been through formal TDD skill testing yet.
 
 The `write-adr` plugin moved out of this bundle to ship with the `adg` CLI

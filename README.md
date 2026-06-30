@@ -8,9 +8,8 @@ Claude Code plugin for the D3I data donation infrastructure team.
 
 | Skill | Description | Status |
 |-------|-------------|--------|
-| `src-workspace-ops` | Debugging and managing D3I deployments on SURF Research Cloud | Early |
-| `researcher-fork` | Working in a D3I researcher fork of data-donation-task | Migrated, needs path generalization |
-| `eyra-mono` | Eyra Next (mono) platform architecture reference | Migrated, needs path generalization |
+| `src-workspace-ops` | Debugging and managing D3I deployments on SURF Research Cloud | Active |
+| `eyra-mono` | Eyra Next (mono) platform architecture reference | Active |
 
 The `write-adr` plugin — ADR authoring and governance: durable **MADR** records,
 compact **lean** records (with `applies_to` routing), and obeying injected ADR briefs

@@ -38,7 +38,7 @@ These are prompted when creating a workspace:
 | `app_name` | Display name for the application | `my-study` |
 | `database_password` | PostgreSQL password | `un2eW9VCtQZxL5w` (pick something strong) |
 | `secret_key_base` | Cookie encryption key, ≥64 chars | `aUMZobj7oJn58XIl...` |
-| `surf_username` | Your SRC profile username | `dmccool` |
+| `surf_username` | Your SRC profile username | `j.smith` |
 | `unsplash_access_key` | Unsplash API key for images | (from unsplash.com/developers) |
 | `unsplash_app_name` | Unsplash app name | (the name you chose at unsplash) |
 

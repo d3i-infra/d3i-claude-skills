@@ -5,7 +5,7 @@
 When something is wrong, work through this in order:
 
 1. **Is the workspace running?** Check SRC portal → workspace state
-2. **Can you SSH in?** `ssh dmccool@<ip>` — if not, workspace may be paused/failed
+2. **Can you SSH in?** `ssh <username>@<ip>` — if not, workspace may be paused/failed
 3. **Are Docker containers up?** `docker compose ps`
 4. **Is the app responding?** `curl -I http://localhost:4000`
 5. **Is Nginx proxying correctly?** `curl -I https://<domain>` from outside

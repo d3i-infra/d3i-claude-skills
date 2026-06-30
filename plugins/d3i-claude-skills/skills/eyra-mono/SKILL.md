@@ -137,7 +137,7 @@ Options (no mono changes required):
 
 **A — Separate Items per platform** (recommended):
 Create one Item per platform, each with one workflow item and its own invite link.
-Upload the corresponding per-platform build (see the `release.sh` pattern in the researcher-fork skill).
+Upload the corresponding per-platform build (produced by `release.sh` in `data-donation-task`, which loops over the platform list setting `VITE_PLATFORM` for each, yielding one zip per platform).
 Send each participant the link for their platform's Item.
 
 **B — Wire `group` through to the script** (requires mono PR):
