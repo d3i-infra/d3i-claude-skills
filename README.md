@@ -6,7 +6,7 @@ contains two plugins (note that the first shares its name with the marketplace i
 | Plugin | Contents | Who needs it |
 |--------|----------|--------------|
 | `d3i-claude-skills` | SRC workspace ops + Eyra mono architecture skills (lives in this repo) | D3I infra work |
-| `write-adr` | ADR authoring + governance skills (lives in [`daniellemccool/ad-guidance-tool`](https://github.com/daniellemccool/ad-guidance-tool), referenced cross-repo) | Anyone writing ADRs |
+| `write-adr` | ADR authoring + governance skills (lives in [`d3i-infra/adg`](https://github.com/d3i-infra/adg), referenced cross-repo) | Anyone writing ADRs |
 
 > **v0.2.0 — Early development.** These skills are actively being developed and tested. Expect changes.
 
@@ -19,21 +19,17 @@ The `d3i-claude-skills` plugin provides:
 | `src-workspace-ops` | Debugging and managing D3I deployments on SURF Research Cloud | Active |
 | `eyra-mono` | Eyra Next (mono) platform architecture reference | Active |
 
-The `write-adr` plugin provides ADR authoring and governance: durable **MADR** records,
-compact **lean** records (with `applies_to` routing), and obeying injected ADR briefs
-while editing code. It ships with the `adg` CLI itself, at
-[`daniellemccool/ad-guidance-tool`](https://github.com/daniellemccool/ad-guidance-tool)
-under `tools/adr-plugin`, so its guidance tracks the tool in lockstep. This marketplace
-references it cross-repo.
+The `write-adr` plugin provides ADR authoring and governance: compact **lean** records (with
+`applies_to` routing), compiled briefs injected by hooks, and obeying those briefs while editing
+code. It ships in the `adg` repo, [`d3i-infra/adg`](https://github.com/d3i-infra/adg) under
+`tools/adr-plugin`, so its guidance tracks the tool in lockstep. This marketplace references it
+cross-repo.
 
-`adg` ships two ways. The plugin bundles a `bin/adg` wrapper that Claude Code puts on the
-Bash tool's PATH, so the **authoring** skills fetch the matching CLI automatically — no
-separate install. The **governance** path, however — the PreToolUse brief hook, the git
-pre-commit hook, and CI (`adg lean index --root .`) — runs *outside* the plugin's PATH and
-needs a **system `adg`**. Install it with the one-liner in the
-[adg README](https://github.com/daniellemccool/ad-guidance-tool#install)
-(`curl … | sh`). For the governance workflow (hook + CI), treat the system install as the
-baseline; the ride-along is a convenience for the authoring skills.
+`adg` is a system dependency that the plugin does not bundle. The plugin's hooks and skills
+call `adg` as a bare command, so it has to be on your `PATH`: see the
+[install section of the adg README](https://github.com/d3i-infra/adg#install). In a repo with
+`docs/decisions/`, the plugin's session-start hook tells you when `adg` is missing or out of
+date.
 
 ## Installation
 

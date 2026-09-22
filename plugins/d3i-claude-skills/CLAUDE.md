@@ -34,5 +34,5 @@ skills/
 - `src-workspace-ops` is comprehensive but has not been through formal TDD skill testing yet.
 
 The `write-adr` plugin moved out of this bundle to ship with the `adg` CLI
-(`daniellemccool/ad-guidance-tool`, `tools/adr-plugin`); the marketplace references it
+(`d3i-infra/adg`, `tools/adr-plugin`); the marketplace references it
 cross-repo. Update it there, not here.
