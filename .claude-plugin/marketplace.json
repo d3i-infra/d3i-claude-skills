@@ -15,15 +15,15 @@
     },
     {
       "name": "write-adr",
-      "description": "ADR authoring + governance with the adg CLI — three skills: durable MADR records, compact lean records (with applies_to routing), and obeying injected ADR briefs while editing code. Ships with the adg CLI so its guidance tracks the tool in lockstep.",
+      "description": "ADR authoring + governance with the adg CLI — lean records with applies_to routing, compiled briefs injected by hooks, and obeying those briefs while editing code. Requires the adg CLI on your PATH (install instructions are in the adg README); ships in the adg repo so guidance tracks the CLI.",
       "source": {
         "source": "git-subdir",
-        "url": "https://github.com/daniellemccool/ad-guidance-tool.git",
+        "url": "https://github.com/d3i-infra/adg.git",
         "path": "tools/adr-plugin",
         "ref": "main"
       },
       "category": "development",
-      "homepage": "https://github.com/daniellemccool/ad-guidance-tool"
+      "homepage": "https://github.com/d3i-infra/adg"
     }
   ]
 }
