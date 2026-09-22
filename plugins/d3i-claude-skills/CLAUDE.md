@@ -33,6 +33,6 @@ skills/
 - `eyra-mono` references specific mono source files by path and line number; these drift as upstream changes, so verify against the current checkout before relying on a citation.
 - `src-workspace-ops` is comprehensive but has not been through formal TDD skill testing yet.
 
-The `write-adr` plugin moved out of this bundle to ship with the `adg` CLI
+The `write-adr` plugin moved out of this bundle to ship in the `adg` repo
 (`d3i-infra/adg`, `tools/adr-plugin`); the marketplace references it
 cross-repo. Update it there, not here.
